@@ -12,6 +12,10 @@ const Header = () => {
       link: "#",
     },
     {
+      label: "Near me",
+      link: "#",
+    },
+    {
       label: "Contact",
       link: "#",
     },
@@ -23,7 +27,7 @@ const Header = () => {
 
   return (
     <main>
-      <nav className="flex justify-between px-8 items-center py-6 bg-slate-950 bg-opacity-50 backdrop-blur">
+      <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-75 backdrop-blur-md z-50 flex justify-between px-8 items-center py-6">
         {/* name */}
         <section className="flex items-center gap-4">
           <Link href="/" className="text-4xl font-mono text-white">
