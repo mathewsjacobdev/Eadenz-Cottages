@@ -1,35 +1,29 @@
-import { Inter } from "next/font/google";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import NearMe from "@/components/NearMe";
 import Head from 'next/head';
-
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from '../components/Navbar';
+import HeroSection from '../components/HeroSection';
+import AboutUs from '../components/AboutUs';
+import Gallery from '../components/Gallery';
+import NearbyAttractions from '../components/NearbyAttractions';
+import ContactForm from '../components/ContactForm';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Edanz</title>
-        <meta name="description" content="Explore nearby attractions around your cottage." />
+        <title>Eadanz Cottage - A Beautiful Stay in Ooty</title>
+        <meta name="description" content="Stay at Eadanz Cottage near top Ooty attractions like the Botanical Garden and Bot House. Cozy rooms and easy access to Ooty's best spots." />
+        <meta name="keywords" content="Ooty, Cottage, Eadanz Cottage, Tourist Attractions, Botanical Garden, Bot House" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <header>
-        <Header />
-      </header>
-
-      <main>
-        <section id="home">
-          <Hero />
-        </section>
-        <section id="nearMe">
-          <NearMe />
-        </section>
-        <section id="about" className="h-screen bg-gray-100 flex items-center justify-center">
-          <h2 className="text-4xl">About Us</h2>
-        </section>
-      </main>
+      <Navbar />
+      <HeroSection />
+      <AboutUs />
+      <Gallery />
+      <NearbyAttractions />
+      <ContactForm />
+      <Footer />
     </>
   );
 }
