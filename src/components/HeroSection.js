@@ -18,7 +18,7 @@ const HeroSection = () => {
       <section className="relative bg-gray-800 text-white h-screen flex items-center justify-center">
         <div className="absolute inset-0">
           <img
-            src='/images/avalanche-hills-ooty-1656333432_c302ca653d90981eb7ac.webp'
+            src='/images/image1.jpg'
             alt="Hero Background"
             className="w-full h-full object-cover"
           />

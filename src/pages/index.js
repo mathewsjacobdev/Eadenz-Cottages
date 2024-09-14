@@ -4,8 +4,9 @@ import HeroSection from '../components/HeroSection';
 import AboutUs from '../components/AboutUs';
 import Gallery from '../components/Gallery';
 import NearbyAttractions from '../components/NearbyAttractions';
-import ContactForm from '../components/ContactForm';
+// import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
+import Contact from '@/components/Contact';
 
 export default function Home() {
   return (
@@ -19,10 +20,11 @@ export default function Home() {
       </Head>
       <Navbar />
       <HeroSection />
-      <AboutUs />
       <Gallery />
       <NearbyAttractions />
-      <ContactForm />
+      <AboutUs />
+      <Contact />
+      {/* <ContactForm /> */}
       <Footer />
     </>
   );

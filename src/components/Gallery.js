@@ -76,27 +76,74 @@
 
 // export default Gallery;
 
-
-
+import { useState } from 'react';
 import Image from 'next/image';
 
+const images = [
+  { image: '/images/image1.jpg' },
+  { image: '/images/image2.jpg' },
+  { image: '/images/bedroom.jpg' },
+  { image: '/images/bedroom1.jpg' },
+  { image: '/images/bedroom2.jpg' },
+  { image: '/images/image3.jpg' },
+  { image: '/images/image5.jpg' },
+  { image: '/images/image8.jpg' },
+];
+
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState(null); // State for tracking the selected image
+  const [isOpen, setIsOpen] = useState(false); // State for modal open/close
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setSelectedImage(null);
+  };
+
   return (
     <section id="gallery" className="py-16 px-4">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6">Gallery</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="relative h-64">
-            <Image src="/images/logo.webp" alt="Room" layout="fill" objectFit="cover" />
-          </div>
-          <div className="relative h-64">
-            <Image src="/images/logo.webp" alt="Hall" layout="fill" objectFit="cover" />
-          </div>
-          <div className="relative h-64">
-            <Image src="/images/logo.webp" alt="Bathroom" layout="fill" objectFit="cover" />
-          </div>
-          {/* Add more images as needed */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {images.map((img, index) => (
+            <div key={index} className="relative h-48 w-full cursor-pointer">
+              <Image
+                src={img.image}
+                alt={`Image ${index + 1}`}
+                layout="fill"
+                objectFit="cover"
+                onClick={() => openModal(img.image)} // Open modal on click
+              />
+            </div>
+          ))}
         </div>
+
+        {/* Modal for larger image view */}
+        {isOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+            <div className="relative w-11/12 md:w-3/4 lg:w-1/2">
+              <span
+                className="absolute top-4 right-4 text-white text-2xl cursor-pointer"
+                onClick={closeModal} // Close modal on click
+              >
+                &times;
+              </span>
+              <Image
+                src={selectedImage}
+                alt="Selected image"
+                layout="responsive"
+                width={700}
+                height={500}
+                objectFit="contain"
+                className="rounded"
+              />
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

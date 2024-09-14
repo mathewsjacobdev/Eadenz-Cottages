@@ -30,7 +30,7 @@ const Header = () => {
       link: "about",
     },
   ];
-
+ 
   return (
     <main>
 <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-75 backdrop-blur-md z-50 flex justify-between px-8 items-center py-6">
