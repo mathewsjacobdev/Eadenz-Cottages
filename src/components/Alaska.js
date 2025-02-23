@@ -23,7 +23,7 @@ const Alaska = () => {
         {/* Alaska's Images */}
         <div className="flex justify-center gap-4 flex-wrap">
           <img
-            src="/images/Alaska.jpg" 
+            src="/images/alaska.jpg" 
             alt="Alaska the Dog"
             className="w-60 h-60 object-cover rounded-lg shadow-md"
           />
