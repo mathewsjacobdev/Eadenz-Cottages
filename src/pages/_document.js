@@ -8,7 +8,7 @@ export default function Document() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Eadanz Cottage - A Beautiful Stay in Ooty" />
         <meta name="keywords" content="Ooty, Cottage, Eadanz Cottage, Tourist Attractions, Botanical Garden, Bot House" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
       </Head>
       <body>
         <Main />

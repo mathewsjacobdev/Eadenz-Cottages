@@ -2,15 +2,30 @@ import Image from 'next/image';
 import NearMeCard from './NearMeCard';
 const attractions = [
   {
-    title: 'Botanical Garden',
+    title: 'Government Botanical Garden',
     image: '/images/government-botanical-garden-ooty-1655270241_9f0726bf8b407dbb1de6.webp',
     description: 'A lush green paradise with a variety of exotic plants.'
   },
   {
     title: 'Bot House',
-    image: '/images/pine-forest-1656503928_d6c35359757cbc521e1b.webp',
-    description: 'Learn about botanical research and enjoy exhibitions.'
-  }
+    image: '/images/boatHouse.png',
+    description: 'Large, scenic lake popular for paddleboating, rowing & other activities in & out of the wate.'
+  },
+  {
+    title: 'Doddabetta Peak Sightseeing',
+    image: '/images/donddabetta.jpeg',
+    description: 'panoramic views, trekking trails, and telescope house.'
+  },
+  {
+    title: 'wenlock downs 9th mile shooting point',
+    image: '/images/wenlock-downs.webp',
+    description: 'A popular location for Bollywood films, this vast parkland has horse-riding trails & hillside views.'
+  },
+  {
+    title: 'Government museum ooty',
+    image: '/images/museum-ooty.png',
+    description: 'Stone House was the first bungalow constructed in Ooty, India. It was built by John Sullivan and was called Kal Bangala by the tribals.'
+  },
 ];
 
 const NearbyAttractions = () => {

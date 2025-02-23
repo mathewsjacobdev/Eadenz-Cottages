@@ -3,7 +3,7 @@ import { FaInstagram, FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
 
 const Contact = () => {
   return (
-    <section id='Contact'  className="py-16 px-4">
+    <section id='contact'  className="py-16 px-4">
     <div  className="contact-container bg-gray-100 p-8">
       <h2 className="text-4xl font-bold text-center mb-8">Contact Us</h2>
 
@@ -12,18 +12,20 @@ const Contact = () => {
         
         {/* Left section for contact details and social links */}
         <div className="contact-details space-y-4">
-          <p className="text-lg">Valley View, Grand Duff Road, Ooty, Tamil Nadu 643001</p>
+          <p className="text-lg">Valley View, Grand Duff Road, Ooty,<br /> Tamil Nadu 643001</p>
           <p className="text-lg">Phone: <a href="tel:+91 9446938124" className="text-blue-600 hover:underline">+91 9446938124</a></p>
-          <p className="text-lg">Email: <a href="mailto:mnhhj@gmail.com" className="text-blue-600 hover:underline">mnhhj@gmail.com</a></p>
+          <p className="text-lg">Email: <a href="mailto:eadenzooty@gmail.com" className="text-blue-600 hover:underline">eadenzooty@gmail.com</a></p>
 
           <div className="social-media-links flex space-x-6 mt-4">
             {/* Instagram */}
-            <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/eadenz_cottages?igsh=eG51endydnVrenNz" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="text-3xl text-pink-500 hover:text-pink-600" />
             </a>
 
             {/* WhatsApp */}
-            <a href="https://wa.me/9878998876" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/9446938124
+
+" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp className="text-3xl text-green-500 hover:text-green-600" />
             </a>
 

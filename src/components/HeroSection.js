@@ -11,25 +11,27 @@
 //   };
   
 //   export default HeroSection;
-  
-
-const HeroSection = () => {
+  const HeroSection = () => {
     return (
       <section className="relative bg-gray-800 text-white h-screen flex items-center justify-center">
+        {/* Background Image with Overlay */}
         <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-black opacity-50"></div> 
           <img
             src='/images/image1.jpg'
             alt="Hero Background"
             className="w-full h-full object-cover"
           />
         </div>
+        {/* Text Content */}
         <div className="relative text-center">
-          <h1 className="text-5xl font-bold mb-4">Welcome to Eadanz Cottage</h1>
-          <p className="text-lg">Experience a cozy stay with easy access to top attractions.</p>
+          <h1 className="text-5xl font-bold mb-4">Welcome to Eadenz Cottages</h1>
+          <p className="text-lg">Our Nature Cottage is a serene escape designed to offer you a peaceful retreat from the hustle and bustle of everyday life.
+
+,<br />Experience a cozy stay with easy access to top attractions.</p>
         </div>
       </section>
     );
   };
   
-  export default HeroSection;
-  
+export default HeroSection;
