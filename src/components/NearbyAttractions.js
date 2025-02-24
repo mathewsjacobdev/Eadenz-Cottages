@@ -23,7 +23,7 @@ const attractions = [
   },
   {
     title: 'Government museum ooty',
-    image: '/images/museum-Ooty.png',
+    image: '/images/museum-ooty.png',
     description: 'Stone House was the first bungalow constructed in Ooty, India. It was built by John Sullivan and was called Kal Bangala by the tribals.'
   },
 ];
