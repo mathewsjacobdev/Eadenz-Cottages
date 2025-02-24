@@ -26,9 +26,8 @@
         {/* Text Content */}
         <div className="relative text-center">
           <h1 className="text-5xl font-bold mb-4">Welcome to Eadenz Cottages</h1>
-          <p className="text-lg">Our Nature Cottage is a serene escape designed to offer you a peaceful retreat from the hustle and bustle of everyday life.
-
-,<br />Experience a cozy stay with easy access to top attractions.</p>
+          <p className="text-lg">
+          Eadenz Cottage is one of the best cottages in Ooty. Enjoy scenic views, trekking, homely food,<br /> and a peaceful stay at an affordable price.</p>
         </div>
       </section>
     );
